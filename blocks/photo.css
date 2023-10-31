@@ -1,0 +1,137 @@
+.photo {
+  width: 100%;
+  position: relative;
+}
+.photo__image {
+  width: 100%;
+  display: block;
+}
+.photo__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*z-index: 2;*/
+}
+
+.photo__title {
+  max-width: 1200px;
+  margin: 20% auto 0;
+  font-size: 140px;
+  line-height: 154px;
+  text-align: center;
+  color: rgb(230, 230, 230);
+}
+
+.photo__info {
+  margin: 25px auto auto;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.photo__button {
+  margin: 0 auto 100px;
+  display: block;
+  width: 160px;
+  height: 44px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+}
+.photo__button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  width: 180px;
+}
+.photo__button-text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+  .photo__title {
+    font-size: 120px;
+    line-height: 130px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .photo__title {
+    margin: 18% auto 0;
+    max-width: 850px;
+    font-size: 100px;
+    line-height: 105px;
+  }
+  .photo__button {
+    width: 140px;
+    height: 35px;
+    margin: 0 auto 30px;
+  }
+  .photo__button:hover {
+    width: 160px;
+  }
+  .photo__button-text {
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .photo__title {
+    -ms-margin: 10% auto 0;
+    margin: 10% auto 0;
+    max-width: 600px;
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photo__title {
+    max-width: 500px;
+    font-size: 60px;
+    line-height: 68px;
+  }
+  .photo__info {
+    margin: 15px auto auto;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .photo__title {
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .photo__button {
+    width: 100px;
+    height: 25px;
+    margin: 0 auto 20px;
+  }
+  .photo__button:hover {
+    width: 120px;
+  }
+  .photo__button-text {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .photo__info {
+    margin: 5px auto auto;
+  }
+  .photo__title {
+    max-width: 300px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}

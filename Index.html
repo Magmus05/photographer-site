@@ -1,97 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="./fonts/fonts.css">
-	<title>Имя фотографа</title>
-</head>
-<body>
-	<div class="page">
-		<header class="header">
-			<img class="header__logo" src="./image/logo.png" alt="Логотип.">
-			<nav class="header__links">
-				<a class="header__link">Мои работы</a>
-				<a class="header__link">Обо мне</a>
-				<a class="header__link">Контакты</a>
-			</nav>
-		</header>
-		<main>
-			<section aria-label="фотоальбомы">
-				<article class="photo">
-					<img class="photo__image " src="./image/first-photo.png" alt="Фотография первого альбома.">
-					<div class="photo__overlay">
-						<h2 lang="en" class="photo__title">Style & Beauty</h2>
-						<p lang="en" class="photo__info">New fashion brand</p>
-						<button class="photo__button"> <span class="photo__button-text"> подробней</span></button>
-					</div>
-				</article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Имя фотографа</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img class="header__logo" src="./image/logo.png" alt="Логотип." />
+        <nav class="header__links">
+          <a class="header__link">Мои работы</a>
+          <a class="header__link" href="#About">Обо мне</a>
+          <a class="header__link">Контакты</a>
+        </nav>
+      </header>
+      <main>
+        <section aria-label="фотоальбомы">
+          <article class="photo">
+            <img
+              class="photo__image"
+              src="./image/first-photo.png"
+              alt="Фотография первого альбома."
+            />
+            <div class="photo__overlay">
+              <h2 lang="en" class="photo__title">Style & Beauty</h2>
+              <p lang="en" class="photo__info">New fashion brand</p>
+              <button name="one" class="photo__button photo__button-text">
+                подробней
+              </button>
+            </div>
+          </article>
 
-				<article class="photo">
-					<img class="photo__image" src="./image/second-photo.png" alt="Фотография второго альбома.">
-					<div class="photo__overlay">
-						<h2 lang="en" class="photo__title">Living Room Girls</h2>
-						<p lang="en" class="photo__info">Interior Design - Red Room</p>
-						<button class="photo__button"> <span class="photo__button-text"> подробней</span></button>
-					</div>
-				</article>
+          <article class="photo">
+            <img
+              class="photo__image"
+              src="./image/second-photo.png"
+              alt="Фотография второго альбома."
+            />
+            <div class="photo__overlay">
+              <h2 lang="en" class="photo__title">Living Room Girls</h2>
+              <p lang="en" class="photo__info">Interior Design - Red Room</p>
+              <button name="two" class="photo__button photo__button-text">
+                подробней
+              </button>
+            </div>
+          </article>
 
-				<article class="photo">
-					<img class="photo__image" src="./image/third-photo.png" alt="">
-					<div class="photo__overlay">
-						<h2 lang="en" class="photo__title">The shape of&nbsp; water flowers</h2>
-						<p lang="en" class="photo__info">Book Cover</p>
-						<button class="photo__button"> <span class="photo__button-text"> подробней</span></button>
-					</div>
-				</article>
+          <article class="photo">
+            <img class="photo__image" src="./image/third-photo.png" alt="" />
+            <div class="photo__overlay">
+              <h2 lang="en" class="photo__title">
+                The shape of&nbsp; water flowers
+              </h2>
+              <p lang="en" class="photo__info">Book Cover</p>
+              <button name="three" class="photo__button photo__button-text">
+                подробней
+              </button>
+            </div>
+          </article>
 
-				<article class="photo">
-					<img class="photo__image" src="./image/fourth-photo.png" alt="">
-					<div class="photo__overlay">
-						<h2 lang="en" class="photo__title">Capturing the&nbsp; sunlight</h2>
-						<p lang="en" class="photo__info">Fashion Photoshoot</p>
-						<button class="photo__button"> <span class="photo__button-text"> подробней</span></button>
-					</div>
-				</article>
+          <article class="photo">
+            <img class="photo__image" src="./image/fourth-photo.png" alt="" />
+            <div class="photo__overlay">
+              <h2 lang="en" class="photo__title">
+                Capturing the&nbsp; sunlight
+              </h2>
+              <p lang="en" class="photo__info">Fashion Photoshoot</p>
+              <button name="four" class="photo__button photo__button-text">
+                подробней
+              </button>
+            </div>
+          </article>
 
-				<article class="photo">
-					<img class="photo__image" src="./image/fifth-photo.png" alt="">
-					<div class="photo__overlay">
-						<h2 lang="en" class="photo__title">Looking on the&nbsp; other side</h2>
-						<p lang="en" class="photo__info">Portrait photography</p>
-						<button class="photo__button"> <span class="photo__button-text"> подробней</span></button>
-					</div>
-				</article>
-			</section>
-			<section class="about">
-				<h1 class="about__title" >Фотограф Иванова Алесандра</h1>
-				<div class="about__info">
-					<img class="about__photo" src="./image/фотограф2.jpg" alt="Фотография фотографа.">
-					<p class="about__history">Моя истроия проста как дважды два. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis molestiae modi consequuntur repudiandae eligendi sint maiores aliquam rerum error laboriosam iure eveniet, placeat est exercitationem culpa ab ratione ea ipsam, nostrum unde eius. Adipisci ex minus obcaecati id reprehenderit dolores vel delectus sequi. Pariatur omnis ea iste ratione fuga.</p>
-				</div>
-			</section>
-		</main>
+          <article class="photo">
+            <img class="photo__image" src="./image/fifth-photo.png" alt="" />
+            <div class="photo__overlay">
+              <h2 lang="en" class="photo__title">
+                Looking on the&nbsp; other side
+              </h2>
+              <p lang="en" class="photo__info">Portrait photography</p>
+              <button name="five" class="photo__button photo__button-text">
+                подробней
+              </button>
+            </div>
+          </article>
+        </section>
+        <section class="about" id="About">
+          <h1 class="about__title">Фотограф Иванова Алесандра</h1>
+          <div class="about__info">
+            <img
+              class="about__photo"
+              src="./image/фотограф2.jpg"
+              alt="Фотография фотографа."
+            />
+            <p class="about__history">
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Cupiditate debitis molestiae modi
+              consequuntur repudiandae eligendi sint maiores aliquam rerum error
+              laboriosam iure eveniet, placeat est exercitationem culpa ab
+              ratione ea ipsam, nostrum unde eius. Adipisci ex minus obcaecati
+              id reprehenderit dolores vel delectus sequi. Pariatur omnis ea
+              iste ratione fuga.
+            </p>
+          </div>
+        </section>
+      </main>
 
-		<footer class="footer">
-			<div class="footer__column">
-				<h3 class="footer__column-heading">Соцсети:</h3>
-				<nav class="footer__column-links">
-					<a target="_blank" href="#" class="footer__column-link"><img src="./image/icon/youtube-icon.svg" alt="Логотип Ютуб." class="footer__social-icon">YouTube</a>
-					<a target="_blank" href="#" class="footer__column-link"><img src="./image/icon/vk_color_white.svg" alt="Логотип ВКонтакте" class="footer__social-icon">ВКонтакте</a>
-					<a target="_blank" href="#" class="footer__column-link"><img src="./image/icon/tiktok-icon.svg" alt="Логотип ТикТок" class="footer__social-icon">TikTok</a>
-				</nav>
-			</div>
-			<p class="footer__author">&copy; Мусакадиев Магомед</p>
-		</footer>
-	</div>
-  <div
-      class="popup popup-foto popup-foto_type_foto close-popup popup-overlay"
-    >
-
+      <footer class="footer">
+        <div class="footer__column">
+          <h3 class="footer__column-heading">Соцсети:</h3>
+          <nav class="footer__column-links">
+            <a target="_blank" href="#" class="footer__column-link"
+              ><img
+                src="./image/icon/youtube-icon.svg"
+                alt="Логотип Ютуб."
+                class="footer__social-icon"
+              />YouTube</a
+            >
+            <a target="_blank" href="#" class="footer__column-link"
+              ><img
+                src="./image/icon/vk_color_white.svg"
+                alt="Логотип ВКонтакте"
+                class="footer__social-icon"
+              />ВКонтакте</a
+            >
+            <a target="_blank" href="#" class="footer__column-link"
+              ><img
+                src="./image/icon/tiktok-icon.svg"
+                alt="Логотип ТикТок"
+                class="footer__social-icon"
+              />TikTok</a
+            >
+          </nav>
+        </div>
+        <p class="footer__author">&copy; Мусакадиев Магомед</p>
+      </footer>
     </div>
 
+    <div class="popup popup-foto">
+      <div class="popup__wrapper">
+        <button class="popup__close popup-close-button" type="button">
+          <span class="sr-only">Закрыть</span>
+        </button>
+        <button class="popup__sliderBtn popup__sliderBtn_left">&#10148;</button>
+        <button class="popup__sliderBtn popup__sliderBtn_right">&#10148;</button>
+        <div class="popup__slider">
+          <div class="popup__sliderLine">
 
-</body>
+					</div>
+          <ol class="popup__sliderIndicators">
+						
+					</ol>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
 </html>
